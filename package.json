@@ -1,5 +1,5 @@
 {
-  "name": "my-app",
+  "name": "hookshype",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -7,6 +7,7 @@
     "@types/node": "^10.12.3",
     "@types/react": "^16.4.18",
     "@types/react-dom": "^16.0.9",
+    "prismjs": "^1.15.0",
     "react": "^16.6.1",
     "react-dom": "^16.6.1",
     "react-scripts": "2.1.1",
@@ -26,5 +27,8 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "@types/prismjs": "^1.9.0"
+  }
 }
