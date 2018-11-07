@@ -29,7 +29,7 @@ class App extends Component<Props, State> {
   }
 
   handleNameChange = (event: any) => {
-    const name = event.target.value;
+    const name = event.target.value.toLowerCase();
     this.setState(() => ({ name }))
   }
 
