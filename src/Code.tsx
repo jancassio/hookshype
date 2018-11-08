@@ -2,6 +2,8 @@ import React from 'react'
 
 import { captalize } from './helpers';
 
+import './Code.css';
+
 interface Props {
   name: string;
 }
@@ -26,7 +28,7 @@ function Component(props) {
 
 export default function Code({ name }: Props) {
   return (
-    <code className="language-javascript">
+    <code className={`Code language-javascript ${name.length > 2 ? 'show' : 'hide'}`}>
       {template({ name })}
     </code>
   )

@@ -1,3 +1,69 @@
 .App {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  height: 100%;
+}
+
+.App h2 span {
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  color: var(--hightlight-color);
+  animation: react 0.8s infinite alternate;
+  padding: 0.3rem;
+  background-color: #fdf6e3;
+}
+
+@keyframes react {
+  from {
+    color: var(--hightlight-color);
+  }
   
+  to {
+    color: #576f75;
+  }
+}
+
+.App div {
+  text-align: left;
+}
+
+.App h2, .App h4 {
+  display: block;
+  word-break: break-all;
+  word-wrap: break-word;
+  margin: 1.4rem 0;
+}
+
+.App h2 span, .App h4 span {
+  color: var(--hightlight-color);
+}
+
+footer {
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+footer li {
+  list-style: none;
+  display: inline-block;
+  margin: 0.2rem 0.2rem;
+}
+
+footer li:first-child {
+  margin-left: 0;
+}
+
+footer a {
+  text-decoration: none;
+  color: #9c9c9c;
+  transition: color 0.2s linear;
+  border: 2px solid transparent;
+}
+
+footer a:hover {
+  color: var(--hightlight-color);
+  border-bottom: 2px solid var(--hightlight-color);
 }

@@ -1,5 +1,7 @@
 import React from 'react'
 
+import './Input.css';
+
 interface Props {
   value: string;
   onChange: (event: any) => void;
@@ -7,9 +9,14 @@ interface Props {
 
 export default function Input({ value, onChange }: Props) {
   return (
-    <label htmlFor="name">
-      <span>Name:</span>
-      <input type="text" name="name" value={value} onChange={onChange} />
+    <label className="Input" htmlFor="name">
+      <input
+        type="text"
+        name="name"
+        value={value}
+        onChange={onChange}
+        placeholder="What's the name?"
+      />
     </label>
   )
 }
