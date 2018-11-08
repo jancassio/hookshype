@@ -1,8 +1,5 @@
 {
   "name" : "react-hooks-hype",
   "version": 1,
-  "alias" : "reacthooks",
-  "evn": {
-    "NODE_ENV": "production"
-  }
+  "alias" : "reacthooks"
 }
