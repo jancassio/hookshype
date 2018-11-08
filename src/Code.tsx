@@ -28,8 +28,12 @@ function Component(props) {
 
 export default function Code({ name }: Props) {
   return (
-    <code className={`Code language-javascript ${name.length > 2 ? 'show' : 'hide'}`}>
-      {template({ name })}
-    </code>
-  )
+    <div className={`Code center ${name.length > 2 ? 'show' : 'hide'}`}>
+      <pre className="language-javascript">
+        <code className="language-javascript">
+          { template({ name }) }
+        </code>
+      </pre>
+    </div>
+  );
 }

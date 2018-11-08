@@ -44,7 +44,7 @@ class App extends PureComponent<Props, State> {
         <h1>Hype my lib with <span>React Hooks!</span></h1>
         <Input value={name} onChange={this.handleNameChange} />
 
-        <div className={`${name.length > 2 ? 'show' : 'hide'}`}>
+        <div className={`center ${name.length > 2 ? 'show' : 'hide'}`}>
           <h2>Lib Name is <span>{name}Hooks</span></h2>
           <h2>The hook name is <span>use{captalize(name)}</span></h2>
           <h4>How to use that?</h4>
