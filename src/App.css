@@ -5,7 +5,12 @@
   justify-content: center;
   align-items: center;
   max-width: 100%;
-  height: auto;
+  min-height: 100%;
+}
+
+.App > * {
+  flex: 0 0 auto;
+  overflow: scroll;
 }
 
 .App h2 span {
