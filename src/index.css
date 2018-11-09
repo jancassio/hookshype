@@ -7,7 +7,7 @@
 
 html, body {
   width: 100%;
-  min-height: 100vh;
+  min-height: 100%;
   --hightlight-color: #FF5A5F
 }
 
@@ -48,11 +48,9 @@ h4 {
   font-size: 1.4rem;
 }
 
-.App div.separator {
-  width: 70%;
-  height: 5px;
-  background-color: var(--hightlight-color);
-  margin: 0.6rem;
+.center {
+  width: calc(100% - 32px);
+  margin: 0 auto;
 }
 
 .show {
